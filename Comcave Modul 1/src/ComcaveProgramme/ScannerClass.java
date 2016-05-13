@@ -14,6 +14,8 @@ public class ScannerClass {
 		a = objscr.nextDouble();
 		b = i/a;
 		System.out.println("Die Divison von " + i + " durch " + a + " ist " + b);
+		objscr.close();
 	}
+	
 
 }
