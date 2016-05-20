@@ -30,7 +30,7 @@ System.out.println(rechne(5,6,"plus"));
 		//return b;
 		
 		switch (s){
-		case plus:
+		case "plus":
 			return (a+b);
 			break;
 		case "minus":

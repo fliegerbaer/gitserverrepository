@@ -17,14 +17,16 @@ public class Primzahlen {
 		primzahl[0]=1;
 		primzahl[1]=3;
 		int pruefzahl = 2;
-		for (int primnummer = 1;primnummer<=i;primnummer++){ //erste bis n primzahlen
+		for (int primnummer = 2;primnummer<=i;primnummer++){ //erste bis n primzahlen
 		//System.out.println(primzahl[primnummer]%pruefzahl==0);
 		while ((primzahl[primnummer]%pruefzahl!=0)){//|(pruefzahl<primzahl[primnummer])){			
-			System.out.println("prüfzahl:" + pruefzahl + "Primnummer" + primnummer);
+			System.out.println("Primzahl ist: "+primzahl[primnummer]+" prüfzahl:" + pruefzahl + " Primnummer " + primnummer + " Primzahl durch Prüfzahl " +(primzahl[primnummer]%pruefzahl));
 			pruefzahl=pruefzahl+1;
-			System.out.println("prüfzahl:" + pruefzahl + "Primnummer" + primnummer);
+			System.out.println("Primzahl ist: "+primzahl[primnummer]+" prüfzahl:" + pruefzahl + " Primnummer " + primnummer);
 		}
+		System.out.println("Neue Primzahl " + primzahl[primnummer] );
 		primzahl[primnummer]=pruefzahl;
+		System.out.println("Neue Primzahl " + primzahl[primnummer] );
 		}
 			
 			//for (int pruefZahl=primzahl[primnummer-1];pruefzahl<=2;pruefzahl<= to ) 
@@ -33,8 +35,16 @@ public class Primzahlen {
 			
 		}
 		
+		}
+	public static boolean istPrimzahl(int p){
 		
-
+		for (int i=2;i<p;i++){
+			//keine primzahl schleife abbrechen:
+			
+		}
+		//int rest=
+		return false;
+		
 	}
 
 }
