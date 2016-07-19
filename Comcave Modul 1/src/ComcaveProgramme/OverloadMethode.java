@@ -10,19 +10,15 @@ public class OverloadMethode {
 		Random random = new Random();
 for (int i=1;i<1000;i++){
 		int zufallserg = random.nextInt(10); //
-		System.out.println(zufallserg);
-		
+		System.out.println("Zuffallszahl " + i + " " + zufallserg);
 		//zufälligerechenoperation
 }
-
-System.out.println(rechne(5,6,"plus"));
-		
-		
+System.out.println("erstes " + rechne(5,6,"plus"));
+System.out.println("zeites " + rechne(5,6,"minus"));
 		}
 	public static int rechne(int a){
 		return a;
 	}
-	
 	public static int rechne(int a, int b){
 		return b;
 	}
@@ -32,17 +28,14 @@ System.out.println(rechne(5,6,"plus"));
 		switch (s){
 		case "plus":
 			return (a+b);
-			break;
+			//break;
 		case "minus":
 			return a-b;
-			break;
-			default:
+			//break;
+		default:
 				return 0;
-				break;
-		
+				//break;
 		}
-		 
-		
 	}
 }
 

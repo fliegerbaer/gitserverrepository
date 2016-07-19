@@ -21,7 +21,7 @@ public class Eingabefenster {
 	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 	        //Add the ubiquitous "Hello World" label.
-	        JLabel label = new JLabel("Hello Olli Ilg");
+	        JLabel label = new JLabel("Hallo Olli Ilg");
 	        frame.getContentPane().add(label);
 
 	        //Display the window.

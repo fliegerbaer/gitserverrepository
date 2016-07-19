@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_DT7HME2WEeaXx91ONLMvBA" name="RootElement">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_DYSp0E2WEeaXx91ONLMvBA" name="Projekt Pflichtenhefterstellung für Software" node="_VbRRoE2XEeaXx91ONLMvBA _3bDe8E2ZEeaXx91ONLMvBA _sAexsE2cEeaXx91ONLMvBA _vKKfcE2cEeaXx91ONLMvBA" group="_jeSV4E2WEeaXx91ONLMvBA _PQQuoE2cEeaXx91ONLMvBA">
+    <group xmi:type="uml:ActivityPartition" xmi:id="_jeSV4E2WEeaXx91ONLMvBA" name="Teilprojekt 1 Pflichtenheft">
+      <subpartition xmi:type="uml:ActivityPartition" xmi:id="_frp8UE2XEeaXx91ONLMvBA" name="1. Projektinitialisierung" node="_3bDe8E2ZEeaXx91ONLMvBA">
+        <subpartition xmi:type="uml:ActivityPartition" xmi:id="_pbGq4E2cEeaXx91ONLMvBA" name="Kick Off Meeting" node="_sAexsE2cEeaXx91ONLMvBA _vKKfcE2cEeaXx91ONLMvBA"/>
+      </subpartition>
+    </group>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_PQQuoE2cEeaXx91ONLMvBA" name="Teilprojekt 2 Umsetzung"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_VbRRoE2XEeaXx91ONLMvBA" name="1.1 Projektorganisation"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_3bDe8E2ZEeaXx91ONLMvBA" name="Ist-Analyse" inPartition="_frp8UE2XEeaXx91ONLMvBA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_sAexsE2cEeaXx91ONLMvBA" name="1.2 Ausgangssituation" inPartition="_pbGq4E2cEeaXx91ONLMvBA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_vKKfcE2cEeaXx91ONLMvBA" name="Soll-Konzept" inPartition="_pbGq4E2cEeaXx91ONLMvBA"/>
+  </packagedElement>
+</uml:Model>
