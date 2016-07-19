@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_stXjgEjTEea60OKl0_Mt4w" name="examples">
+  <packagedElement xmi:type="uml:Package" xmi:id="_PAQ9QEjaEea60OKl0_Mt4w" name="deployment">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_efuuMEjVEea60OKl0_Mt4w" annotatedElement="_3biWYEjTEea60OKl0_Mt4w">
+      <body>Ein Device stellt ein Geräd in der IT landschaft dar.&#xD;
+Es ist eine Physikalische Komponente.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="__sTAwEjVEea60OKl0_Mt4w" annotatedElement="_HBE18EjWEea60OKl0_Mt4w">
+      <body>Eine Node ist ein &quot;deployment&quot; target.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_9JgzkEjYEea60OKl0_Mt4w" annotatedElement="_F-61YEjWEea60OKl0_Mt4w">
+      <body>Ein Artefakt kasnn eine installierbare Software Komponente sein.&#xD;
+</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_cuWTUEjZEea60OKl0_Mt4w" annotatedElement="_1naGUEjTEea60OKl0_Mt4w">
+      <body>Eine Execution Environment  stellt eine laufzeit Umgebung bereit in der Software komponenten arbeiten.&#xD;
+</body>
+    </ownedComment>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_tAJ8oEjTEea60OKl0_Mt4w">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Device" xmi:id="_3biWYEjTEea60OKl0_Mt4w" name="Device">
+      <nestedClassifier xmi:type="uml:ExecutionEnvironment" xmi:id="_1naGUEjTEea60OKl0_Mt4w" name="Java">
+        <nestedClassifier xmi:type="uml:Node" xmi:id="_HBE18EjWEea60OKl0_Mt4w" name="App-server">
+          <nestedClassifier xmi:type="uml:Artifact" xmi:id="_HmhFUEjWEea60OKl0_Mt4w" name="Software" fileName=""/>
+        </nestedClassifier>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Artifact" xmi:id="_F-61YEjWEea60OKl0_Mt4w" name="New Software" fileName=""/>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_pH2G8EjWEea60OKl0_Mt4w" name="read/write data" memberEnd="_pH80oEjWEea60OKl0_Mt4w _pH9bsEjWEea60OKl0_Mt4w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pH7mgEjWEea60OKl0_Mt4w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pH7mgUjWEea60OKl0_Mt4w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_pH9bsEjWEea60OKl0_Mt4w" name="db-server" type="_6KOxQEjTEea60OKl0_Mt4w" association="_pH2G8EjWEea60OKl0_Mt4w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Device" xmi:id="_oqUykEjYEea60OKl0_Mt4w" name="DB-server">
+      <nestedNode xmi:type="uml:Node" xmi:id="_6KOxQEjTEea60OKl0_Mt4w" name="postgres">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_pH80oEjWEea60OKl0_Mt4w" name="app-server" type="_HBE18EjWEea60OKl0_Mt4w" association="_pH2G8EjWEea60OKl0_Mt4w"/>
+        <deployment xmi:type="uml:Deployment" xmi:id="_R88GkEjWEea60OKl0_Mt4w" client="_6KOxQEjTEea60OKl0_Mt4w" supplier="_F-61YEjWEea60OKl0_Mt4w _HBE18EjWEea60OKl0_Mt4w" deployedArtifact="_F-61YEjWEea60OKl0_Mt4w"/>
+      </nestedNode>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_fEPk8EjfEea60OKl0_Mt4w" name="component">
+    <packagedElement xmi:type="uml:Component" xmi:id="_lnLtgEjfEea60OKl0_Mt4w" name="Component1">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_npPr4EjfEea60OKl0_Mt4w" name="Port1" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_3l7yEEjfEea60OKl0_Mt4w" name="Port2" aggregation="composite"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_0kjrwEjfEea60OKl0_Mt4w" client="_lnLtgEjfEea60OKl0_Mt4w" supplier="_zEBtIEjfEea60OKl0_Mt4w" contract="_zEBtIEjfEea60OKl0_Mt4w"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_kRkI8EjgEea60OKl0_Mt4w" name="Component1">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_pGsr4EjgEea60OKl0_Mt4w" name="Port1" aggregation="composite"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_mhwfYEjfEea60OKl0_Mt4w" name="Component2">
+      <generalization xmi:type="uml:Generalization" xmi:id="_nXlpQEjhEea60OKl0_Mt4w" general="_lnLtgEjfEea60OKl0_Mt4w"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_rP30UEjfEea60OKl0_Mt4w" name="Port1" aggregation="composite"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_zEBtIEjfEea60OKl0_Mt4w" name="Interface1">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_27lYEEjgEea60OKl0_Mt4w" name="Attribute1"/>
+      <ownedReception xmi:type="uml:Reception" xmi:id="_1WUDYEjgEea60OKl0_Mt4w" name="Reception1"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_2T-lgEjgEea60OKl0_Mt4w" name="Operation1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_643tAEjgEea60OKl0_Mt4w" name="Interface2"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_65zrsEjhEea60OKl0_Mt4w" name="composite">
+    <packagedElement xmi:type="uml:Class" xmi:id="_KAD5IEjiEea60OKl0_Mt4w" name="Class1">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_O3aCkEjiEea60OKl0_Mt4w" name="Port1" aggregation="composite"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_L55IkEjiEea60OKl0_Mt4w" name="Class1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_OHZh8EjiEea60OKl0_Mt4w" name="Class2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:InformationItem" xmi:id="_Rdod8EjiEea60OKl0_Mt4w" name="InformationItem1"/>
+    <packagedElement xmi:type="uml:Collaboration" xmi:id="_ZMEwUEjiEea60OKl0_Mt4w" name="Collaboration1">
+      <collaborationUse xmi:type="uml:CollaborationUse" xmi:id="_jwXOcEjiEea60OKl0_Mt4w" name="CollaborationUse1"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_0C1XYEjiEea60OKl0_Mt4w" name="interactionOverview">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_3KRCYEjiEea60OKl0_Mt4w" name="Activity1" node="_TsUtoEjjEea60OKl0_Mt4w _WBZuoEjjEea60OKl0_Mt4w _X50BwEjjEea60OKl0_Mt4w _h97yEEjjEea60OKl0_Mt4w">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_YHq3kEjjEea60OKl0_Mt4w" name="Interaction1">
+        <fragment xmi:type="uml:InteractionUse" xmi:id="_YHuh8EjjEea60OKl0_Mt4w" name="InteractionUse_Interaction1" refersTo="_YHq3kEjjEea60OKl0_Mt4w"/>
+      </ownedBehavior>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_rHf-oEjjEea60OKl0_Mt4w" target="_h97yEEjjEea60OKl0_Mt4w" source="_TsUtoEjjEea60OKl0_Mt4w"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_TsUtoEjjEea60OKl0_Mt4w" name="InitialNode1" outgoing="_rHf-oEjjEea60OKl0_Mt4w"/>
+      <node xmi:type="uml:CallBehaviorAction" xmi:id="_WBZuoEjjEea60OKl0_Mt4w"/>
+      <node xmi:type="uml:CallBehaviorAction" xmi:id="_X50BwEjjEea60OKl0_Mt4w" name="CallBehaviorAction1" behavior="_YHq3kEjjEea60OKl0_Mt4w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YIFuUEjjEea60OKl0_Mt4w" source="org.eclipse.papyrus.uml.diagram.interactionoverview.callbehavioraction">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YIFuUUjjEea60OKl0_Mt4w" key="type" value="snapshot"/>
+        </eAnnotations>
+      </node>
+      <node xmi:type="uml:DecisionNode" xmi:id="_h97yEEjjEea60OKl0_Mt4w" name="DecisionNode1" incoming="_rHf-oEjjEea60OKl0_Mt4w"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_GSoWQEpwEeaas7va1FMniA" name="class">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_O3NJ8EpxEeaas7va1FMniA" annotatedElement="_RsbgEEpwEeaas7va1FMniA">
+      <body>Eine Klasse in UML referenziert direkt auf eine Klasse im Software System.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_yM5FIEpxEeaas7va1FMniA" annotatedElement="_VZ53YEpwEeaas7va1FMniA">
+      <body>Ein Attribut ist eine Eigenschaft der Klasse. Es besitzt einen Typen und eine sichbarkeit.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_EzAEoEpyEeaas7va1FMniA" annotatedElement="_RsbgEEpwEeaas7va1FMniA">
+      <body>Eine Operation definiert eine Methode der Klasse, sie kann input und output Parameter besitzen selbstverständlich auch eine sichtbarkeit.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_nyLkUEpyEeaas7va1FMniA" annotatedElement="_a7zHwEpyEeaas7va1FMniA">
+      <body>Eine Klasse kann die Eigenschaften und Methoden einer anderen Klasse Erben.&#xD;
+Diese Beziehung der Klassen wird über den &quot;Vererbunspfeil&quot; notiert.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_FRNOIEpzEeaas7va1FMniA" annotatedElement="_AjVJwEpzEeaas7va1FMniA">
+      <body>Ein Interface ist eine benannte Sammlung von Methodensignaturen.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_ajSEoEpzEeaas7va1FMniA" annotatedElement="_XS9jYEpzEeaas7va1FMniA">
+      <body>Auch Schnittstellen können voneinander Erben.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_pFQgUEpzEeaas7va1FMniA" annotatedElement="_gMXNAEpzEeaas7va1FMniA">
+      <body>Eine Klasse die ein Interface &quot;realisiert&quot; implementiert alle im Interface definierten Methoden. Die realisierung einer Schnittstelle wird über einen gestrichelten Vererbungspfeil notiert.</body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:Class" xmi:id="_RsbgEEpwEeaas7va1FMniA" name="Klasse">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_VZ53YEpwEeaas7va1FMniA" name="einAttribut">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_cEXkQEpwEeaas7va1FMniA" name="einAnderesAttribut" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0gPdQEpwEeaas7va1FMniA" value="Ein default value."/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3LBogEpwEeaas7va1FMniA" name="eineOperation"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_93QP8EpwEeaas7va1FMniA" name="operationMitParametern" visibility="protected">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_EXaKQEpxEeaas7va1FMniA" name="einParameter">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_IYMfIEpxEeaas7va1FMniA" name="AbstrakteKlasse" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_bjFKMEpyEeaas7va1FMniA" name="eignschaft1">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_a7zHwEpyEeaas7va1FMniA" name="Klasse2">
+      <generalization xmi:type="uml:Generalization" xmi:id="_luiRkEpyEeaas7va1FMniA" general="_IYMfIEpxEeaas7va1FMniA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_AjVJwEpzEeaas7va1FMniA" name="Schnittstelle">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_UAmawEpzEeaas7va1FMniA" name="Operation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_XS9jYEpzEeaas7va1FMniA" name="Interface">
+      <generalization xmi:type="uml:Generalization" xmi:id="_ZfiIoEpzEeaas7va1FMniA" general="_AjVJwEpzEeaas7va1FMniA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gMXNAEpzEeaas7va1FMniA" name="Klasse3">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_hsVyAEpzEeaas7va1FMniA" client="_gMXNAEpzEeaas7va1FMniA" supplier="_AjVJwEpzEeaas7va1FMniA" contract="_AjVJwEpzEeaas7va1FMniA"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
