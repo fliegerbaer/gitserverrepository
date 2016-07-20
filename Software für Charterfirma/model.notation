@@ -216,11 +216,23 @@
               <element xmi:type="uml:ActivityPartition" href="model.uml#_QEWMQE3DEea29st7-JyzvQ"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QEeIEk3DEea29st7-JyzvQ" x="197" y="31" width="161" height="401"/>
             </children>
+            <children xmi:type="notation:Shape" xmi:id="__DXwkE5cEeaEqYI_eDg3Qw" type="ActivityPartition_Shape">
+              <children xmi:type="notation:DecorationNode" xmi:id="__DYXoE5cEeaEqYI_eDg3Qw" type="ActivityPartition_NameLabel"/>
+              <children xmi:type="notation:DecorationNode" xmi:id="__DYXoU5cEeaEqYI_eDg3Qw" type="ActivityPartition_FloatingNameLabel">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="__DYXok5cEeaEqYI_eDg3Qw" y="5"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="__DY-sE5cEeaEqYI_eDg3Qw" type="ActivityPartition_ActivityNodeCompartment">
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="__DY-sU5cEeaEqYI_eDg3Qw"/>
+              </children>
+              <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="__DXwkU5cEeaEqYI_eDg3Qw"/>
+              <element xmi:type="uml:ActivityPartition" href="model.uml#_--CkoE5cEeaEqYI_eDg3Qw"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="__DXwkk5cEeaEqYI_eDg3Qw" x="373" y="33" width="174" height="397"/>
+            </children>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jefKMU2WEeaXx91ONLMvBA"/>
           </children>
           <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_jed8EU2WEeaXx91ONLMvBA"/>
           <element xmi:type="uml:ActivityPartition" href="model.uml#_jeSV4E2WEeaXx91ONLMvBA"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jed8Ek2WEeaXx91ONLMvBA" x="12" y="56" width="744" height="507"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jed8Ek2WEeaXx91ONLMvBA" x="12" y="56" width="811" height="507"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_PQWOME2cEeaXx91ONLMvBA" type="ActivityPartition_Shape">
           <children xmi:type="notation:DecorationNode" xmi:id="_PQW1QE2cEeaXx91ONLMvBA" type="ActivityPartition_NameLabel"/>
@@ -232,7 +244,7 @@
           </children>
           <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_PQWOMU2cEeaXx91ONLMvBA"/>
           <element xmi:type="uml:ActivityPartition" href="model.uml#_PQQuoE2cEeaXx91ONLMvBA"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PQWOMk2cEeaXx91ONLMvBA" x="791" y="52" width="136" height="491"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PQWOMk2cEeaXx91ONLMvBA" x="843" y="56" width="136" height="491"/>
         </children>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DZm4gU2WEeaXx91ONLMvBA"/>
       </children>

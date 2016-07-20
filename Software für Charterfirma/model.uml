@@ -9,6 +9,7 @@
       <subpartition xmi:type="uml:ActivityPartition" xmi:id="_QEWMQE3DEea29st7-JyzvQ" name="2. Projektplanung" node="_VOv0kE3DEea29st7-JyzvQ">
         <subpartition xmi:type="uml:ActivityPartition" xmi:id="_ul2mwE3DEea29st7-JyzvQ" name="Ergebnis 2." node="_zIBxcE3DEea29st7-JyzvQ _DS42gE3EEea29st7-JyzvQ _bCUgQE3EEea29st7-JyzvQ _nwbKkE3EEea29st7-JyzvQ _vow_0E3EEea29st7-JyzvQ"/>
       </subpartition>
+      <subpartition xmi:type="uml:ActivityPartition" xmi:id="_--CkoE5cEeaEqYI_eDg3Qw" name="3. Systemdesign"/>
     </group>
     <group xmi:type="uml:ActivityPartition" xmi:id="_PQQuoE2cEeaXx91ONLMvBA" name="Teilprojekt 2 Umsetzung"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_VbRRoE2XEeaXx91ONLMvBA" name="1.1 Projektorganisation"/>
