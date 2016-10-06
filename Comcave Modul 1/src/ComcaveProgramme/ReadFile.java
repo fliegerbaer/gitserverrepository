@@ -8,7 +8,7 @@ public class ReadFile {
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub
-		File datei = new File("c://test//testu.txt");
+		File datei = new File("/Users/frank/test/Datei1.txt");
 		
 		if(datei.exists()){
 			System.out.println("Datei " + datei.getName() + " gibt es ");
@@ -18,7 +18,7 @@ public class ReadFile {
 			
 		}
 		char[] myText = new char[100];//String mit 100 Zeichen vorbereiten
-	try{ //prüfen, ob Datei vorhanden ist
+	try{ //prï¿½fen, ob Datei vorhanden ist
 			FileReader dateiLeser = new FileReader(datei);
 			
 			try 
