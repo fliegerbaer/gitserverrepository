@@ -14,4 +14,21 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/OOP01/Fahrrad.java</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Dropbox/Comcave/Themen/Programmieren/OOP01/Fahrrad.java</locationURI>
+		</link>
+		<link>
+			<name>src/OOP01/Fahrzeug.java</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Dropbox/Comcave/Themen/Programmieren/OOP01/Fahrzeug.java</locationURI>
+		</link>
+		<link>
+			<name>src/OOP01/Programm.java</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Dropbox/Comcave/Themen/Programmieren/OOP01/Programm.java</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>

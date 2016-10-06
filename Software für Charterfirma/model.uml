@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_DT7HME2WEeaXx91ONLMvBA" name="RootElement">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_DYSp0E2WEeaXx91ONLMvBA" name="Projekt Pflichtenhefterstellung für Software" node="_VbRRoE2XEeaXx91ONLMvBA _3bDe8E2ZEeaXx91ONLMvBA _sAexsE2cEeaXx91ONLMvBA _vKKfcE2cEeaXx91ONLMvBA _9c0iYE3AEea29st7-JyzvQ _NSHxsE3CEea29st7-JyzvQ _d1caEE3CEea29st7-JyzvQ _VOv0kE3DEea29st7-JyzvQ _zIBxcE3DEea29st7-JyzvQ _DS42gE3EEea29st7-JyzvQ _bCUgQE3EEea29st7-JyzvQ _nwbKkE3EEea29st7-JyzvQ _vow_0E3EEea29st7-JyzvQ" group="_jeSV4E2WEeaXx91ONLMvBA _PQQuoE2cEeaXx91ONLMvBA">
+    <group xmi:type="uml:ActivityPartition" xmi:id="_jeSV4E2WEeaXx91ONLMvBA" name="Teilprojekt 1 Pflichtenheft">
+      <subpartition xmi:type="uml:ActivityPartition" xmi:id="_frp8UE2XEeaXx91ONLMvBA" name="1. Projektinitialisierung" node="_3bDe8E2ZEeaXx91ONLMvBA _9c0iYE3AEea29st7-JyzvQ">
+        <subpartition xmi:type="uml:ActivityPartition" xmi:id="_pbGq4E2cEeaXx91ONLMvBA" name="Kick Off Meeting" node="_sAexsE2cEeaXx91ONLMvBA _vKKfcE2cEeaXx91ONLMvBA"/>
+        <subpartition xmi:type="uml:ActivityPartition" xmi:id="_MKDL0E3BEea29st7-JyzvQ" name="Ergebnisse 1." node="_NSHxsE3CEea29st7-JyzvQ _d1caEE3CEea29st7-JyzvQ"/>
+      </subpartition>
+      <subpartition xmi:type="uml:ActivityPartition" xmi:id="_QEWMQE3DEea29st7-JyzvQ" name="2. Projektplanung" node="_VOv0kE3DEea29st7-JyzvQ">
+        <subpartition xmi:type="uml:ActivityPartition" xmi:id="_ul2mwE3DEea29st7-JyzvQ" name="Ergebnis 2." node="_zIBxcE3DEea29st7-JyzvQ _DS42gE3EEea29st7-JyzvQ _bCUgQE3EEea29st7-JyzvQ _nwbKkE3EEea29st7-JyzvQ _vow_0E3EEea29st7-JyzvQ"/>
+      </subpartition>
+      <subpartition xmi:type="uml:ActivityPartition" xmi:id="_--CkoE5cEeaEqYI_eDg3Qw" name="3. Systemdesign"/>
+    </group>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_PQQuoE2cEeaXx91ONLMvBA" name="Teilprojekt 2 Umsetzung"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_VbRRoE2XEeaXx91ONLMvBA" name="1.1 Projektorganisation"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_3bDe8E2ZEeaXx91ONLMvBA" name="1.4 Lastenheft" inPartition="_frp8UE2XEeaXx91ONLMvBA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_sAexsE2cEeaXx91ONLMvBA" name="1.2 Ausgangssituation" inPartition="_pbGq4E2cEeaXx91ONLMvBA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_vKKfcE2cEeaXx91ONLMvBA" name="1.3 Soll-Konzept" inPartition="_pbGq4E2cEeaXx91ONLMvBA"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_9c0iYE3AEea29st7-JyzvQ" name="Fragenkatalog/Ist-Analyse" inPartition="_frp8UE2XEeaXx91ONLMvBA"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_NSHxsE3CEea29st7-JyzvQ" name="Lastenheft" inPartition="_MKDL0E3BEea29st7-JyzvQ"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_d1caEE3CEea29st7-JyzvQ" name="Protokioll Kick off Meeting" inPartition="_MKDL0E3BEea29st7-JyzvQ"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_VOv0kE3DEea29st7-JyzvQ" name="2.1 Projektplan" inPartition="_QEWMQE3DEea29st7-JyzvQ"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_zIBxcE3DEea29st7-JyzvQ" name="Projektstrukturplan" inPartition="_ul2mwE3DEea29st7-JyzvQ"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_DS42gE3EEea29st7-JyzvQ" name="Projektablaufplan" inPartition="_ul2mwE3DEea29st7-JyzvQ"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_bCUgQE3EEea29st7-JyzvQ" name="Ressourcenplan" inPartition="_ul2mwE3DEea29st7-JyzvQ"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_nwbKkE3EEea29st7-JyzvQ" name="Kosten-Nutzen gegenüberstellung" inPartition="_ul2mwE3DEea29st7-JyzvQ"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_vow_0E3EEea29st7-JyzvQ" name="Dokumentation von Risiken" inPartition="_ul2mwE3DEea29st7-JyzvQ"/>
+  </packagedElement>
+</uml:Model>
